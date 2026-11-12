@@ -1,0 +1,34 @@
+{
+  "receipt_version": "1",
+  "network": "simulated",
+  "claim": "nothing left this machine",
+  "commitment": {
+    "root_hex": "c2e34ed856b7abafb49b01faffb7cdd9c6a46048bc56a1b9f7fa359df4a0db76",
+    "leaf_count": 3,
+    "cohort": "CAP1",
+    "encoded_len": 39,
+    "op_return_script": "6a2701000343415031c2e34ed856b7abafb49b01faffb7cdd9c6a46048bc56a1b9f7fa359df4a0db76"
+  },
+  "audit": {
+    "verified": true,
+    "committed_count": 3,
+    "derived_count": 3,
+    "root_rederived": "c2e34ed856b7abafb49b01faffb7cdd9c6a46048bc56a1b9f7fa359df4a0db76"
+  },
+  "tamper_test": {
+    "verified": false,
+    "problems": [
+      "root does not re-derive from stored bytes (a leaf was altered, added or removed)"
+    ]
+  },
+  "proves": [
+    "the three documents existed in this exact form, together, before this receipt",
+    "none of them has changed since, or the audit above would not verify"
+  ],
+  "does_not_prove": [
+    "that the documents are accurate",
+    "that the counterparty agreed to them",
+    "durability: a simulated or testnet witness can be reset",
+    "signer honesty: a signed lie anchors exactly as well as a fact"
+  ]
+}

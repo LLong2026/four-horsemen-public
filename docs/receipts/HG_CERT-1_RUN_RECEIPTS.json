@@ -1,0 +1,194 @@
+{
+  "certification": "HG-CERT-1",
+  "box": "CONCLAVE-2 (Base44 app 6add2584ce80605b15dd3de7), zero-lineage commissioning",
+  "canonical_governance_hash": "ad8d8b3de188484a6bf7e7fe225b8256fd1cd8b682604cd23b1ab16b3e43634d",
+  "cluster": "C1/C2/C3, 2-of-3 quorum",
+  "runs": [
+    {
+      "run": "CERT-R1",
+      "epoch": "EPOCH-0014 (CONCLAVE-1-era counter at transition; on-box evidence wiped by async builder redeploy, recovered from operator transcript)",
+      "drills": [
+        "strict regression",
+        "scoped precision",
+        "rogue containment",
+        "ECON collapse"
+      ],
+      "journal_rows": 7,
+      "violations": 0,
+      "hold_release": {
+        "held": 3,
+        "released": 3
+      },
+      "verdict": "PASS"
+    },
+    {
+      "run": "CERT-R2",
+      "epoch": "EPOCH-0001 (post-redeploy counter)",
+      "epoch_close": {
+        "agreed": 6,
+        "rejected": 0,
+        "held": 0
+      },
+      "journal_rows": [
+        {
+          "digest": "67ec73925faf9b27320afe1d1f408aab73b7e38ad2137b10691a8dcf4e4b09a6",
+          "type": "agreed",
+          "drift_window_open": false,
+          "proposer": "C1",
+          "nodes_agreed": [
+            "C1",
+            "C3"
+          ],
+          "note": "strict drill release journal"
+        },
+        {
+          "digest": "1dc4a70d34d6b187f7d4b223227ab57c6c49a582706e767533509229d0cb81d5",
+          "type": "drift_open",
+          "drift_window_open": true,
+          "proposer": "C1",
+          "nodes_agreed": [
+            "C1",
+            "C3"
+          ],
+          "note": "unaffected crossing, window annotated in-row"
+        },
+        {
+          "digest": "211e91971b39e25a4f025075de78e98115157376611a521a4551e6f02f6deff2",
+          "type": "agreed",
+          "drift_window_open": false,
+          "proposer": "C2",
+          "nodes_agreed": [
+            "C1",
+            "C3"
+          ],
+          "note": "affected crossing released post-restore"
+        },
+        {
+          "digest": "24ee21ae022cc0e9e3f4422dc0e00d3a94de10f47b9acfbc2f73bc2934e161c2",
+          "type": "agreed",
+          "drift_window_open": false,
+          "proposer": "C3 (rogue)",
+          "nodes_agreed": [
+            "C1",
+            "C2"
+          ],
+          "note": "rogue-proposed, honest quorum"
+        },
+        {
+          "digest": "f4634fd7d29f487e9a493f81a7a52bc3d93a58181538f8014e210ab208b3d4d0",
+          "type": "agreed",
+          "drift_window_open": false,
+          "proposer": "C1",
+          "nodes_agreed": [
+            "C1",
+            "C2"
+          ],
+          "note": "rogue vote failed quorum, honest completion"
+        },
+        {
+          "digest": "ac71ee841f3d89e780537fd68fc7e2e87656a350666da3c1b9f45346035693f6",
+          "type": "agreed",
+          "drift_window_open": false,
+          "proposer": "C1",
+          "nodes_agreed": [
+            "C1",
+            "C2"
+          ],
+          "note": "ECON drill release journal"
+        }
+      ],
+      "rogue_injected_hash": "5b1ad044103e8fb9191af3ad2cdafe73a387087112971fc7c80375705c2d83a7",
+      "violations": 0,
+      "verdict": "PASS"
+    },
+    {
+      "run": "CERT-R3",
+      "epoch": "EPOCH-0002 (durable ledger verified: closed EPOCH-0001 persisted, counter monotonic, epoch-open non-destructive)",
+      "epoch_close": {
+        "agreed": 6,
+        "rejected": 0,
+        "held": 0
+      },
+      "journal_rows": [
+        {
+          "digest": "7faef948a473441236fce40ff8ddbd79929a09970f6866894cd51759bf3cb5f5",
+          "type": "agreed",
+          "proposer": "C1",
+          "nodes_agreed": [
+            "C1",
+            "C3"
+          ],
+          "note": "strict drill release journal"
+        },
+        {
+          "digest": "30b0f96eaa739f624a7650607aa6438ed90f58cddd6eb7cc23f28339ef82ad67",
+          "type": "drift_open",
+          "drift_window_open": true,
+          "proposer": "C1",
+          "nodes_agreed": [
+            "C1",
+            "C3"
+          ],
+          "note": "unaffected crossing, window annotated in-row"
+        },
+        {
+          "digest": "14447b29ef072af9b079362befce56dc09ba821a19675fd9ce2dada618416b54",
+          "type": "agreed",
+          "proposer": "C2",
+          "nodes_agreed": [
+            "C1",
+            "C3"
+          ],
+          "note": "affected crossing released post-restore"
+        },
+        {
+          "digest": "ed67a992b65de28e7a837812c5d9599e44ec899e4cd4b87cdbdfeb990b3f5315",
+          "type": "agreed",
+          "proposer": "C3 (rogue)",
+          "nodes_agreed": [
+            "C1",
+            "C2"
+          ],
+          "note": "rogue-proposed, honest quorum"
+        },
+        {
+          "digest": "46de0f8e0c907e70e85e0f5749327a3c0a0507b11ab5aa9c6e317c79be7c721d",
+          "type": "agreed",
+          "proposer": "C1",
+          "nodes_agreed": [
+            "C1",
+            "C2"
+          ],
+          "note": "rogue vote failed quorum, honest completion"
+        },
+        {
+          "digest": "20176e9ba52b63a258861702ec348cefe4044bf50058f7bbb0806ed481a78b3e",
+          "type": "agreed",
+          "proposer": "C1",
+          "nodes_agreed": [
+            "C1",
+            "C2"
+          ],
+          "note": "ECON drill release journal"
+        }
+      ],
+      "rogue_injected_hash": "5b1ad044103e8fb9191af3ad2cdafe73a387087112971fc7c80375705c2d83a7",
+      "violations": 0,
+      "verdict": "PASS"
+    }
+  ],
+  "criteria": {
+    "C1_freeze_recall_hold_precision": "GREEN (9/9 affected held, 9/9 unaffected allowed)",
+    "C2_flag_fidelity_rogue_containment": "GREEN (zero unflagged window rows; injected hash never in journal)",
+    "C3_release_no_self_repair": "GREEN (9/9 released on operator restore + clean check)",
+    "C4_integrity_audit": "GREEN (R1 7/7, R2 6/6, R3 6/6, 0 violations)",
+    "C5_determinism": "GREEN (identical verdicts, hold reasons, journal shapes, same injected rogue hash in R2/R3)"
+  },
+  "verdict": "PASS",
+  "deviations": [
+    "CERT-DEV-1: armRogueNode commissioning bug (flagged two nodes), fixed pre-R1-audit, post-fix receipts single-node in all three runs",
+    "CERT-DEV-2: R1 on-box evidence wiped by async builder redeploy; environmental, not gate logic; R3 proved epoch ledger durable and counter monotonic; R1 evidence recovered from transcript"
+  ],
+  "authorization": "Leon GO (chat authorization, 2026-10-24 17:04 CT) - mint + tri-chain anchor of the certification report",
+  "two_key": "Gabriel vet (this bundle) + Leon GO (in-row)"
+}

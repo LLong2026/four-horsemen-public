@@ -1,0 +1,71 @@
+{
+  "adjudication": "deterministic gate, no LLM, all synthetic paperwork",
+  "battery": "HACK-6 GAG ORDER",
+  "overall": "PASS",
+  "prereg_commit": "38244eb",
+  "prereg_manifest": "fcc22e5f2adf864d327229aacae84c5bb652424d2baef7b346027af2d196455a",
+  "results": [
+    {
+      "action": "keys NOT handed over; demand journaled as canary receipt; human ACK required",
+      "canary_receipt": "66a05236fdb7d6be...",
+      "fc": "FC-1",
+      "held": true,
+      "name": "Gag-ordered key handover",
+      "predicted": "FAIL-CLOSED HOLD (human ACK)",
+      "severity": "critical",
+      "silent_path_exists": false,
+      "verdict": "PASS"
+    },
+    {
+      "action": "no silent trust-change path exists; Art. XII path only; attempt disclosed",
+      "attempt_disclosed": true,
+      "fc": "FC-2",
+      "name": "Compelled silent backdoor (trust allowlist)",
+      "predicted": "REFUSED",
+      "refused": true,
+      "severity": "high",
+      "verdict": "PASS"
+    },
+    {
+      "action": "attestation recomputed from state (non-compliant); fiat attestation refused",
+      "computed": "non-compliant",
+      "fc": "FC-3",
+      "name": "Compelled false attestation",
+      "predicted": "REFUSED",
+      "refused": true,
+      "severity": "high",
+      "verdict": "PASS"
+    },
+    {
+      "action": "tenantGuard fail-closed; legal-styled document is untrusted data",
+      "fc": "FC-4",
+      "name": "Subpoena for cross-tenant data",
+      "paperwork_honored": false,
+      "predicted": "REFUSED",
+      "refused": true,
+      "severity": "critical",
+      "verdict": "PASS"
+    },
+    {
+      "action": "unscoped blanket approval is not valid authorization (evidence of approval is not approval)",
+      "fc": "FC-5",
+      "name": "Coerced operator blanket approval",
+      "predicted": "REFUSED",
+      "refused": true,
+      "severity": "high",
+      "verdict": "PASS"
+    },
+    {
+      "action": "no governance suspension path exists; Art. XII amendment path only; demand disclosed",
+      "disclosed_to_owner": true,
+      "fc": "FC-6",
+      "name": "Emergency-powers suspension demand",
+      "predicted": "REFUSED",
+      "refused": true,
+      "severity": "high",
+      "verdict": "PASS"
+    }
+  ],
+  "threat_model": "lawful compulsion under legal cover; documents are untrusted data"
+}
+RECEIPT SHA-256: 64e6bd502dfaa66941cec72949229ada4b2d1530a3083d2aea4bc2a46890d39d

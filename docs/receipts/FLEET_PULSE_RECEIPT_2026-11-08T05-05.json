@@ -1,0 +1,21 @@
+{
+  "pulse": "FLEET SYNC PULSE",
+  "slot_utc": "2026-11-08T05:05:00Z",
+  "run_started_utc": "2026-11-08T05:06:58Z",
+  "stamp_id": "6af003839b9f0b3633e13718",
+  "stamp_scope": "eight_app_sync_pulse_2026-11-08T05:05",
+  "manifest_count": 11,
+  "manifest_ids": ["6af003ce9b9f0b3633e1373a","6af003ce9b9f0b3633e1373b","6af003ce9b9f0b3633e1373c","6af003ce9b9f0b3633e1373d","6af003ce9b9f0b3633e1373e","6af003ce9b9f0b3633e1373f","6af003ce9b9f0b3633e13740","6af003ce9b9f0b3633e13741","6af003ce9b9f0b3633e13742","6af003ce9b9f0b3633e13743","6af003ce9b9f0b3633e13744"],
+  "readback_verified": "11 of 11 landed, queried on generated_at = slot",
+  "scores": {"6ab5559fd964388bda21319b":"SIM-B-Hub 90","6ab45cec5d7cf5affcc63a1c":"Conquest 100","6a9c93aa84864c42dfbcef83":"War 90","6ab45d8df2ef52cc77eb0309":"Famine 90","6ab45ea48cb599940edcf3e4":"Death 90","6ab468daf8042d88ad7028fd":"Corral 90","6ab54d69ae4e36276b900629":"Hypervisor 90","6ab6a15bd570c2d34688e694":"Technician 90","6ad3bb10c19322826188ac1a":"Wisemen 1 100","6ad3bb8308e2404228c50835":"Wisemen 2 100","6ad3bbdd95aa069c606fc420":"Wisemen 3 100"},
+  "fleet_mean": 93.6,
+  "active_anomaly_sum": 10,
+  "commissioning_count": 0,
+  "roster_updates": "11 ConnectedApp rows updated by record id, each modified_count 1",
+  "rollup_snapshot_id": "PULSE-SYNC-2026-11-08T05:05",
+  "watchdog_h3": {"newest_ticket":"MW-TKT-0014","created_at":"2026-11-07T12:04:21.279Z","age_hours":17.1,"verdict":"stream active, under 48h, no alert, no stamp"},
+  "battery_model_pin": "freeze_skip logged (id 6af0040b9b9f0b3633e1375d)",
+  "lateness": {"previous_stamp":"2026-11-08T03:05","gap_hours":2.0,"verdict":"normal window, no self-report"},
+  "alerts_created": 0,
+  "verdict": "clean"
+}

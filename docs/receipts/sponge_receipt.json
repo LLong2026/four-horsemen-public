@@ -1,0 +1,93 @@
+{
+ "checker_version": "thesis-gate/0.7.0",
+ "index_name": "DEMO-INDEX",
+ "index_date": "2026-11-08",
+ "input_sha256": "7d567705d25828e0f61fd383a9a81f7bc7ca884e30a572ce394859c47666ce8a",
+ "input_bytes": 25723,
+ "reference_count": 23,
+ "citation_style": "numeric",
+ "cited_count": 31,
+ "author_year": {
+  "citations": 0,
+  "entries": 0
+ },
+ "latex_expressions": 0,
+ "constants_checked": 0,
+ "findings_sha256": "640f46395c2e7ada98225dd0be27763ba125be046b7be1915312395012480817",
+ "findings_count": 22,
+ "attribution": {
+  "cues_found": 4,
+  "unattributed_claims": 4,
+  "route_required": true
+ },
+ "coverage": {
+  "references": 23,
+  "reference_entries_numbered": 23,
+  "reference_lines_unparsed": 1,
+  "citation_style": "numeric",
+  "cited_numbers": 31,
+  "citation_markers_malformed": 20,
+  "author_year_citations": 0,
+  "author_year_entries": 0,
+  "latex_expressions": 0,
+  "constants_checked": 0,
+  "sections": 0,
+  "captioned_tables_and_figures": 3,
+  "sentences_with_numbers": 69,
+  "math_statements_expected": 0,
+  "math_statements_checked": 0,
+  "math_statements_flagged": 0,
+  "attribution_cues_found": 4,
+  "checks_run": [
+   "references",
+   "citation coverage",
+   "cross references",
+   "arithmetic",
+   "exact expressions",
+   "table totals",
+   "claims",
+   "source attribution cues",
+   "author-year citation pairing",
+   "named constants"
+  ],
+  "checks_not_run": []
+ },
+ "checks_not_run": 0,
+ "scope": {
+  "covers": [
+   "reference existence against the dated index named in this receipt",
+   "author agreement and publication-year agreement with that index",
+   "retraction status of every indexed reference",
+   "citation coverage: every citation has an entry, every entry is cited",
+   "internal cross-references to tables, figures, sections and appendices",
+   "table totals against the sum of their own parts",
+   "arithmetic stated in the text, recomputed in exact integer fractions",
+   "duplicate reference entries and dangling citation numbers"
+  ],
+  "does_not_cover": [
+   "the argument, the method, the analysis or the quality of the writing",
+   "whether quoted data was measured, invented or misreported",
+   "statistical appropriateness, sample size or significance",
+   "plagiarism or originality; this is not a similarity check",
+   "any reference the index does not contain, beyond reporting it unverified",
+   "formatting, citation style compliance, or submission requirements"
+  ],
+  "unverified_rule": "A reference the index cannot resolve is reported unverified, never false. Unverified is a statement about the index, not about the source.",
+  "determinism": "Findings are this checker's own output, sorted and hashed. The same document against the same index produces the same findings and the same receipt on any machine.",
+  "explain_lane": "The explain lane is rule-based: each finding opens one fixed plain-language note. If a language model is added later it may only restate a finding in plainer words, it may never create one, and its text never enters the receipt.",
+  "formats": ".docx, .md and .txt. A Word file is unzipped and read inside the browser, so the file itself is never uploaded. PDF extraction is out of scope: a PDF is refused with a plain message rather than guessed at.",
+  "index_note": "This build ships a demonstration index so the resolver can be seen working. A production build replaces it with a dated OpenAlex and Crossref snapshot, and this field then carries that date.",
+  "forced_definition": "A forced repair has exactly one right answer because the document already holds everything needed to compute it. It is applied by exact character offset and refused when the text there has moved. Forced today: arithmetic in exact integer fractions; a total row against its own parts; a publication year against the index record; a duplicate entry that is the highest-numbered in the list; a dangling citation when the counts leave exactly one pairing. A percentage column that misses 100 is excluded, because correcting the total and correcting one row both silence the finding and mean different things.",
+  "call_definition": "Everything judgement-shaped arrives as a draft. Where the tool can write each alternative but cannot choose, the author picks the option and it is applied under their name. Where no edit can be computed, the item is only accepted as a to-do, because the tool must not rewrite an argument.",
+  "chain": "The original hash fixes the document as submitted. The change-set hash fixes the ordered list of approved edits. The corrected hash fixes the result of applying that list to the original. A third party holding the record can recompute all three and check the corrected document against them without trusting the tool or the author: change one character of the original, one edit, or the corrected text, and a hash no longer matches.",
+  "signature": "The sign-off records what the author decided. It is not a legal instrument and it does not certify the work.",
+  "data_handling": "Drafts are read inside the browser and never uploaded. A saved run keeps the receipt, not the draft."
+ },
+ "receipt_sha256": "4d9cf7374b510a3acf348ddad77bf5019ceecb7b905be3a747b42cae4dea985f",
+ "signature": null,
+ "signature_note": "Unsigned v0.1 prototype. ML-DSA-87 seat signature is added at the box stage.",
+ "lanes": {
+  "deterministic": "all findings and both hashes above",
+  "advisory_model": "not present in v0.1; when added it may explain findings and may never create one"
+ }
+}

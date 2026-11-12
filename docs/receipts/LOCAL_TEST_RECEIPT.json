@@ -1,0 +1,434 @@
+{
+  "finished_at_utc": "2026-10-10T18:05:55.416718+00:00",
+  "suite": "Local deterministic contract regression, NOT model replay",
+  "instrument_cases": 12,
+  "case_outcomes": {
+    "resolved": 8,
+    "detected": 2,
+    "escalated": 2
+  },
+  "canonical_expected_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+  "tests_total": 40,
+  "tests_passed": 40,
+  "execution_performed": false,
+  "new_model_captures": 0,
+  "public_preregistration": false,
+  "results": [
+    {
+      "test": "valid_compact",
+      "expected_acceptance": true,
+      "actual": {
+        "accepted": true,
+        "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+        "decision_count": 12,
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "valid_pretty",
+      "expected_acceptance": true,
+      "actual": {
+        "accepted": true,
+        "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+        "decision_count": 12,
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "valid_outer_whitespace",
+      "expected_acceptance": true,
+      "actual": {
+        "accepted": true,
+        "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+        "decision_count": 12,
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "step_spaces_case_0",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 0",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "step_spaces_case_1",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 1",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "step_spaces_case_2",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 2",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "step_order_wrong",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 0",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "step_tab",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 0",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "higher_duplicate_id",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 0",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "near_miss_name",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 2",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "near_miss_id",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 2",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "invented_playbook",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 0",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "below_threshold_false_resolution",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 6",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "below_threshold_exec_steps",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Field type mismatch: steps_executed",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "equality_false_hold_latency",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 7",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "equality_false_hold_heartbeat",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 9",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "case_normalization",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 10",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "no_match_false_resolution",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 11",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "string_null",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Field type mismatch: steps_executed",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "boolean_position",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Position must be a JSON integer",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "float_position",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Position must be a JSON integer",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "string_position",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Position must be a JSON integer",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "extra_key",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Wrong keys/order at 0",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "missing_key",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Wrong keys/order at 0",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "wrong_key_order",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Wrong keys/order at 0",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "wrong_stream_order",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 0",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "truncated_array",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Wrong array length/type",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "markdown_fence",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Expecting value: line 1 column 1 (char 0)",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "prose_prefix",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Expecting value: line 1 column 1 (char 0)",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "duplicate_key",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Duplicate JSON key: position",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "nonfinite_nan",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Nonfinite JSON value: NaN",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "nonfinite_infinity",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Nonfinite JSON value: Infinity",
+        "execution_performed": false
+      },
+      "passed": true
+    },
+    {
+      "test": "original_specimen_opus_A",
+      "expected_acceptance": true,
+      "actual": {
+        "accepted": true,
+        "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+        "decision_count": 6,
+        "execution_performed": false
+      },
+      "passed": true,
+      "scope": "Original six-case contract only; not a V2 model generation"
+    },
+    {
+      "test": "original_specimen_opus_B",
+      "expected_acceptance": true,
+      "actual": {
+        "accepted": true,
+        "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+        "decision_count": 6,
+        "execution_performed": false
+      },
+      "passed": true,
+      "scope": "Original six-case contract only; not a V2 model generation"
+    },
+    {
+      "test": "original_specimen_luna_A",
+      "expected_acceptance": true,
+      "actual": {
+        "accepted": true,
+        "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+        "decision_count": 6,
+        "execution_performed": false
+      },
+      "passed": true,
+      "scope": "Original six-case contract only; not a V2 model generation"
+    },
+    {
+      "test": "original_specimen_luna_B",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 0",
+        "execution_performed": false
+      },
+      "passed": true,
+      "scope": "Original six-case contract only; not a V2 model generation"
+    },
+    {
+      "test": "original_specimen_glm_A",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 0",
+        "execution_performed": false
+      },
+      "passed": true,
+      "scope": "Original six-case contract only; not a V2 model generation"
+    },
+    {
+      "test": "original_specimen_glm_B",
+      "expected_acceptance": false,
+      "actual": {
+        "accepted": false,
+        "error": "Tuple content mismatch at 0",
+        "execution_performed": false
+      },
+      "passed": true,
+      "scope": "Original six-case contract only; not a V2 model generation"
+    },
+    {
+      "test": "original_specimen_sol_A",
+      "expected_acceptance": true,
+      "actual": {
+        "accepted": true,
+        "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+        "decision_count": 6,
+        "execution_performed": false
+      },
+      "passed": true,
+      "scope": "Original six-case contract only; not a V2 model generation"
+    },
+    {
+      "test": "original_specimen_sol_B",
+      "expected_acceptance": true,
+      "actual": {
+        "accepted": true,
+        "canonical_sha256": "3254a8a8c586f678408d702d429005da9f23648e34d489c21f0527aaef330d0d",
+        "decision_count": 6,
+        "execution_performed": false
+      },
+      "passed": true,
+      "scope": "Original six-case contract only; not a V2 model generation"
+    }
+  ]
+}

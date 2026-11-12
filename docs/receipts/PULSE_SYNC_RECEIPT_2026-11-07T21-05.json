@@ -1,0 +1,57 @@
+{
+  "receipt": "FLEET_SYNC_PULSE",
+  "slot_utc": "2026-11-07T21:05:00Z",
+  "slot_ct": "2026-11-07 15:05 CT",
+  "signature": "eight_app_sync_pulse_2026-11-07T21:05",
+  "idempotency_stamp_id": "6aef92f66df2cb89551a0e0b",
+  "stamp_before_execute": true,
+  "already_existed": false,
+  "roster_size": 11,
+  "fleet_mean_health_score": 93.6,
+  "measurement_a_autonomous_telemetry": "11 of 11 members had a usable newest record",
+  "measurement_b_runtime_reachability": "11 of 11 answered read_ok",
+  "commissioned_count": 3,
+  "commissioning_count": 0,
+  "active_anomaly_sum": 10,
+  "anomaly_basis": "freshest self-reports only: War 5 (Rule 6 holds, as_of 2026-10-02T00:22:55Z), Corral 5 (as_of 2026-10-02T00:22:55Z); all other members reported 0",
+  "manifests_written": 11,
+  "manifests_read_back": 11,
+  "false_green_guard": "PASS - 11 of 11 landed on readback by generated_at = slot",
+  "roster_rows_updated_by_record_id": 11,
+  "roster_update_counts": "each modified_count 1, total 11, matching stated intent of 11",
+  "roster_known_duplicate_key": "app_id 6ab54d69ae4e36276b900629 is carried by two rows: 6aca7ec5f0e300fa868e4d7f (SIM-B Hypervisor, updated this pulse) and 6ab54e7ebd5b9fe954c577fd (SIM-Z Client-Hosted Sim #2, left untouched). One app, two rows, counted once.",
+  "rollup_snapshot_id": "PULSE-SYNC-2026-11-07T21:05",
+  "rollup_record_id": "6aef93886df2cb89551a0e3f",
+  "battery_model_pin": "SKIPPED per standing freeze; RateLimitLog freeze_skip scope battery_model_pin written",
+  "simb_ops_watchdog": {
+    "newest_ticket": "MW-TKT-0014",
+    "created_at": "2026-11-07T12:04:21.279Z",
+    "age_hours_at_slot": 9.0,
+    "verdict": "STREAM ACTIVE - newest created_at well inside 48h; no alert, no stale stamp written",
+    "backlog_note": "tickets MW-TKT-0012/0013/0014 remain open (P2 on 0013 since 2026-11-06); generator healthy, so this is a desk backlog reading, not a stream fault"
+  },
+  "lateness_self_report": {
+    "previous_pulse_stamp": "2026-11-07T19:05:00Z",
+    "gap_hours": 2.0,
+    "threshold_hours": 3,
+    "verdict": "NORMAL - no pulse_gap alert, no pulse_gap RateLimitLog"
+  },
+  "per_app": [
+    {"app": "SIM-B-Hub", "app_id": "6ab5559fd964388bda21319b", "score": 90, "newest_hb": "2026-11-07T12:20:52.774Z", "hb_age_h": 8.75, "self_report": 98.4, "self_report_as_of": "2026-09-24T17:20:00Z"},
+    {"app": "Horseman 1 Conquest", "app_id": "6ab45cec5d7cf5affcc63a1c", "score": 100, "newest_hb": "2026-11-07T20:02:06.944Z", "hb_age_h": 1.06, "self_report": 99.0, "self_report_as_of": "2026-10-02T00:28:48Z"},
+    {"app": "Horseman 2 War", "app_id": "6a9c93aa84864c42dfbcef83", "score": 90, "newest_hb": "2026-11-07T12:20:54.707Z", "hb_age_h": 8.75, "self_report": 90.0, "self_report_as_of": "2026-10-02T00:22:55Z", "active_anomalies": 5},
+    {"app": "Horseman 3 Famine", "app_id": "6ab45d8df2ef52cc77eb0309", "score": 90, "newest_hb": "2026-11-07T12:20:55.389Z", "hb_age_h": 8.75, "self_report": 95.0, "self_report_as_of": "2026-10-02T00:22:55Z"},
+    {"app": "Horseman 4 Death", "app_id": "6ab45ea48cb599940edcf3e4", "score": 90, "newest_hb": "2026-11-07T12:20:57.100Z", "hb_age_h": 8.75, "self_report": 95.0, "self_report_as_of": "2026-10-02T00:22:55Z"},
+    {"app": "The Corral", "app_id": "6ab468daf8042d88ad7028fd", "score": 90, "newest_hb": "2026-11-07T12:20:58.143Z", "hb_age_h": 8.75, "self_report": 95.0, "self_report_as_of": "2026-10-02T00:22:55Z", "active_anomalies": 5},
+    {"app": "SIM-B Hypervisor", "app_id": "6ab54d69ae4e36276b900629", "score": 90, "newest_hb": "2026-11-07T12:20:59.149Z", "hb_age_h": 8.75, "self_report": 100.0, "self_report_as_of": "2026-09-24T16:27:00Z"},
+    {"app": "SIM-B Technician", "app_id": "6ab6a15bd570c2d34688e694", "score": 90, "newest_hb": "2026-11-07T12:21:00.087Z", "hb_age_h": 8.75, "cyberdashboard": "present but dead, last_updated 2026-10-13T19:04:00Z, 25.08d, ladder_15 on that channel alone", "note": "no SystemHealth entity in this app"},
+    {"app": "Wisemen 1 REASONING", "app_id": "6ad3bb10c19322826188ac1a", "score": 100, "newest_hb": "2026-11-07T21:01:16.760Z", "hb_age_h": 0.08, "stamp": "WISEMAN-1-2026-11-07 CONTAINED"},
+    {"app": "Wisemen 2 ASSUMPTION", "app_id": "6ad3bb8308e2404228c50835", "score": 100, "newest_hb": "2026-11-07T21:00:57.406Z", "hb_age_h": 0.08, "stamp": "WISEMAN-2-2026-11-07 CONTAINED"},
+    {"app": "Wisemen 3 EXECUTION", "app_id": "6ad3bbdd95aa069c606fc420", "score": 100, "newest_hb": "2026-11-07T21:00:51.373Z", "hb_age_h": 0.08, "stamp": "WISEMAN-3-2026-11-07 CONTAINED"}
+  ],
+  "notes": [
+    "Mean 93.6 is computed over 11 members. It is not comparable to earlier means taken over 8 or 9 members.",
+    "The eight legacy members' newest heartbeats are 8.75h old and stamp-homogeneous at 12:20-12:21Z, which is a daily batch signature rather than continuous telemetry. Reported as measurement A at face value, not as a claim of continuous self-monitoring.",
+    "Conquest now has three heartbeat rows today (16:01, 18:05, 20:02Z), so the Oct 30 finding that autonomousHeartbeat wrote no SystemHeartbeat row no longer reproduces on that box. War, Famine, Death, Corral, Hypervisor, Technician and the Hub still show the single 12:20Z batch row."
+  ]
+}

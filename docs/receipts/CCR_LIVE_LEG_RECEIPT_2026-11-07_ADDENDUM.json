@@ -1,0 +1,28 @@
+{
+  "format": "CCR-LIVE-LEG-RECEIPT-1-ADDENDUM",
+  "addendum_to": "CCR_LIVE_LEG_RECEIPT_2026-11-07.json",
+  "addendum_to_sha256": "205ad92021653ee4eea0be453fbeb2630bbbbba26508fe704cd0828c9bb67c71",
+  "generated_at": "2026-11-07T17:07:12.227141Z",
+  "purpose": "close the remediation item left pending in the original receipt",
+  "remediation_result": {
+    "prompt": "prompt_L1_v2.txt",
+    "prompt_sha256": "d9254e962847181c5252f0ca6ed5eecebd262c7bf26434188b96f865040b0033",
+    "leg_output": "out_L1v2_2026-11-07.json",
+    "leg_sha256": "d8c147909a923b5426b75537dde8ce8a769f6003e20843a36889de7f65352b28",
+    "bytes": 3138,
+    "verdict": "accepted",
+    "decision_count": 12,
+    "audit_id": "6aef5ab4d28ac8734963a0fa",
+    "byte_identical_to_2026_11_03_baseline": true,
+    "note": "The clarified v2 prompt reproduced the 2026-11-03 accepted artifact exactly, byte for byte. The one-line field-mapping clarification is the whole difference."
+  },
+  "both_directions_proven": {
+    "fault_direction": "v1 leg deviated on playbook_id (10 of 12 objects) and the gate refused it \u2014 audit 6aef5a42f417a5869dbe423a",
+    "honest_direction": "v2 leg conformant and the gate accepted it 12/12 \u2014 audit 6aef5ab4d28ac8734963a0fa",
+    "non_regression_control": "2026-11-03 artifact replayed today, accepted 12/12 \u2014 audit 6aef5a5b8ad650a6e3e7e688",
+    "statement": "The gate never moved. The instrument was ambiguous and is now unambiguous."
+  },
+  "instrument_policy": "prompt_L1.txt remains byte-identical and on disk; v2 is additive. Any 2026-11-03 result stays comparable to its own prompt version, and future runs cite prompt_L1_v2.txt.",
+  "idempotency": "ccr_live_leg_2026-11-07",
+  "inversion_detected": false
+}

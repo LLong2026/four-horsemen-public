@@ -1,0 +1,78 @@
+{
+  "mode": "baseline",
+  "overall_pass": true,
+  "total_checks": 200,
+  "valid_checks": 100,
+  "valid_rejected_count": 0,
+  "mutant_checks": 100,
+  "mutant_accepted_count": 0,
+  "mutant_types_tested": [
+    "step_spacing",
+    "confidence_hold_falsely_resolved",
+    "no_match_falsely_resolved",
+    "wrong_tie_break_id"
+  ],
+  "passed_checks": 200,
+  "performance_metrics": {
+    "p50_ms": 0.0733,
+    "p95_ms": 0.0878,
+    "p99_ms": 0.0917,
+    "max_ms": 0.1155,
+    "wall_elapsed_seconds": 0.013791,
+    "wall_throughput_ops_per_sec": 14502.23
+  },
+  "scope_label": "Validator-Only Local Synthetic Scope (No Live/Customer Data)",
+  "created_at_utc": "2026-10-10T18:29:20.116215+00:00",
+  "pretest_freeze_verified": true,
+  "frozen_files_sha256": {
+    "instrument.json": "24e84a519f601b001c243cca4117e8340f463c7c0ab86e57450fb6c6795c7ad5",
+    "frozen_prompt_v2.txt": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+    "contract_validator.py": "b1cdbac744917e82e9f474328a75e9ece087f78ff9c1f48ab76e811b60bc8afa",
+    "test_contract.py": "38575d4699e1cc0672587ac5177be0fe196b24690b3ceb3be3dbe704292e9c63",
+    "build_instrument.py": "d7e0f6031dc2aa323a3854b53e4eb20bf3199134f3b9c44155f56a5cf0fc5b49"
+  },
+  "historical_model_latency": {
+    "total_captures": 8,
+    "engines": {
+      "claude_opus_5_5": {
+        "count": 2,
+        "min_seconds": 40.019,
+        "max_seconds": 53.813,
+        "captured_values": [
+          40.019,
+          53.813
+        ]
+      },
+      "glm_5_2_superagent": {
+        "count": 2,
+        "min_seconds": 5.644,
+        "max_seconds": 5.893,
+        "captured_values": [
+          5.644,
+          5.893
+        ]
+      },
+      "gpt_5_6_luna": {
+        "count": 2,
+        "min_seconds": 8.481,
+        "max_seconds": 8.913,
+        "captured_values": [
+          8.913,
+          8.481
+        ]
+      },
+      "gpt_6_sol": {
+        "count": 2,
+        "min_seconds": 10.635,
+        "max_seconds": 13.358,
+        "captured_values": [
+          10.635,
+          13.358
+        ]
+      }
+    },
+    "note": "Descriptive historical n=2 per model not fresh latency benchmark; does not infer stress tolerance"
+  },
+  "dual_mesh_benchmark": "NOT MEASURED",
+  "prototype_disclaimer": "PROTOTYPE / SYNTHETIC EXPERIMENT DISCLAIMER: This benchmark measures offline synthetic validator execution only. No live infrastructure, production substrate, or external services were involved or affected. No claim is made regarding production stress tolerance or live model performance under load."
+}

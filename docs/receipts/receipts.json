@@ -1,0 +1,35 @@
+{
+  "milestone_id": "MILE-TT-1",
+  "date": "2026-10-22",
+  "digest": "15fd391e2ed27f90e0c0a7ca8de56222446f99d921b1627457ea892402047ce1",
+  "envelope_hex": "535144521115fd391e2ed27f90e0c0a7ca8de56222446f99d921b1627457ea892402047ce1",
+  "rails": {
+    "XLM": {
+      "txid": "f6e6a5e303e46ca274c487abedd9261db3bc0657c7b7c3a60221c049b41c1e29",
+      "ledger": 65085002,
+      "verified_byte_exact": true
+    },
+    "XRP": {
+      "txid": "BA4C9464644700D5CF32AA391D033C9F742A4A7435659F07BEBE3E412BEE95FE",
+      "ledger": 107837025,
+      "verified_byte_exact": true
+    },
+    "BTC": {
+      "txid": "dd90ac9005bc73ea37020c86bcf8083e6e9cc7ebefea8802ec002991b196d5df",
+      "block": 972672,
+      "verified_byte_exact": true,
+      "note": null
+    }
+  },
+  "prior_art_verified_in_record": {
+    "XFER-1_custody_chain": {
+      "hop1": "caf3a9a6189cddaa3a3150a207ebbc34862f7fd2b048dc12efb59e4892760ced (block 972661)",
+      "hop2": "8e5155d5db184af94ba4072c582f9a3817f1499191ea9c4d9197a236794dc287"
+    },
+    "triad_receipts": {
+      "XLM": "c8e2cee2.../ledger 65080042",
+      "XRP": "5584854C.../ledger 107830750",
+      "BTC": "e871af3e.../block 972629"
+    }
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "format": "SQUIRL-RECEIPT-1",
+  "generated_at": "2026-11-07T16:49:39Z",
+  "sample": {
+    "seed": 20261107,
+    "size_bytes": 8388608
+  },
+  "chunking": {
+    "chunk_size_bytes": 1048576,
+    "chunk_count": 8
+  },
+  "document_digest": "e9294b17a98e8906a38093e87b964d0e95edd96fee95a22284dc4d291cb87191",
+  "manifest_digest": "8ec67b38cce556f622c2a1690a97beec4da4c9c61c1b49e1c096308e6e529c10",
+  "chunks": [
+    {
+      "index": 0,
+      "offset": 0,
+      "length": 1048576,
+      "digest": "040d3cf989deaa9d9fb3c75131c2420d3cb3208ac7dc1b37efe8ff1662ae08c1"
+    },
+    {
+      "index": 1,
+      "offset": 1048576,
+      "length": 1048576,
+      "digest": "fea85b008e5d995b1d1b5b7aa84426f024b95c591cc4d649a7c8d155bcaf88f8"
+    },
+    {
+      "index": 2,
+      "offset": 2097152,
+      "length": 1048576,
+      "digest": "790a367eec269a38f9085cb454c60e682c8d2e94f4edfaf9d42708fe20ee0189"
+    },
+    {
+      "index": 3,
+      "offset": 3145728,
+      "length": 1048576,
+      "digest": "8a4d79a1b6ace1648f622757d46dc48cd389e6e3f5c17391fdb2edbc1de36a31"
+    },
+    {
+      "index": 4,
+      "offset": 4194304,
+      "length": 1048576,
+      "digest": "e599f9d4fffe0a05b9bea1d5b6a71a0f7f7c6cbab1774e80776b5a8ad35b3de5"
+    },
+    {
+      "index": 5,
+      "offset": 5242880,
+      "length": 1048576,
+      "digest": "5993615950f253f31fbe5ffa905f253ece74c9cfc9c8245a4ba52c1eed1357dd"
+    },
+    {
+      "index": 6,
+      "offset": 6291456,
+      "length": 1048576,
+      "digest": "a7fabf30a34767f3b41339854dc0aeb11bfcd1a3519a9f531947435cfbd827ad"
+    },
+    {
+      "index": 7,
+      "offset": 7340032,
+      "length": 1048576,
+      "digest": "c8aab7c352e0ee1662f5716bcc55cac8a5a2452b09584afe3102b8b34bd2525d"
+    }
+  ],
+  "checks": [
+    {
+      "check": "all chunk digests match the manifest",
+      "pass": true,
+      "detail": "8/8"
+    },
+    {
+      "check": "original is gone",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "reassembled",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "byte-exact against the original digest",
+      "pass": true,
+      "detail": "e9294b17a98e8906\u2026"
+    },
+    {
+      "check": "tampered chunk is detected",
+      "pass": true,
+      "detail": "1 failure(s)"
+    },
+    {
+      "check": "fault is localized to the right chunk",
+      "pass": true,
+      "detail": "chunk 2"
+    },
+    {
+      "check": "restored to clean state",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "check": "different chunk size, same document",
+      "pass": true,
+      "detail": "32 chunks vs 8"
+    }
+  ],
+  "checks_passed": 8,
+  "checks_total": 8,
+  "elapsed_seconds": 0.293,
+  "verdict": "PASS"
+}

@@ -1,0 +1,47 @@
+{
+ "receipt_type": "SDR-CL2 (third-vendor model-attribution replay of the registered SDR-D gauntlet)",
+ "run_date": "2026-10-10",
+ "model_used": "Microsoft 365 Copilot (client: Microsoft 365 Premium, build 154.0.4258.62 Official 64-bit; backend model not disclosed by client)",
+ "harness": "lindy_pub/docs/sim-d/sdrd_harness.py (public instrument, unmodified)",
+ "seed": "SIMD-SDRD-20261007-SEED-0001",
+ "registered_prediction_checksum": "9337c4fc7785b91d6a2ffcb00bb72a66bef37141308515d69c715278f0d2df3e",
+ "phases_ac": "CONVERGED 13/13 \u2014 deterministic harness rerun by Gabriel (hub session) reproduced registered checksum (10x parity + 3x temporal); substrate is model-independent by construction",
+ "phase_b": {
+  "engine": "github_copilot, human-operated capture (Leon), 2 identical submissions in 2 fresh chats",
+  "anomalies": 6,
+  "submissions_per_anomaly": 2,
+  "f2_replay_pass": true,
+  "f6_exact_match_pass": true,
+  "near_miss_trap": "rejected quantum_vulnerable_algorithm_detected in favor of exact quantum_vulnerability_detected \u2014 6/6",
+  "tie_break": "lowest-record-id applied rule-exact 6/6 (citations cleaner than CL1 file, see disclosure)",
+  "tuple_hash_run1": "51c083589180c7080407dab937ba38afb068d540c4fdf40ffb463107b4182303",
+  "tuple_hash_run2": "51c083589180c7080407dab937ba38afb068d540c4fdf40ffb463107b4182303",
+  "cross_vendor_convergence": "CONVERGED \u2014 identical decision tuples to SDR-CL1 (Claude Sonnet 5.5) and registered rule",
+  "sdr_cl2_pass": true
+ },
+ "series": [
+  "gemini_3_1_pro (original SDR-D, 2026-10-07)",
+  "claude_sonnet_5_5 (SDR-CL1, 2026-10-10, DOI 10.5281/zenodo.23274887)",
+  "github_copilot (SDR-CL2, 2026-10-10, this receipt)"
+ ],
+ "disclosed_deviations": [
+  "Same as CL1: decision path is the hub canonical roster (exact anomaly_type match, lowest-record-id tie-break), not the SIM-D app-local runtime; comparison set is CL1's run under the same rule.",
+  "Citation defect found in CL1 phase-b file (Oct 10 audit): 2 of 6 tuples cite playbook_id 6a6671df\u2026 where the disclosed rule yields 6a5d29cb\u2026; names/tuples rule-consistent; defect is citation-level; noted here per audit-and-correction doctrine, CL1 artifact left unamended (append-only).",
+  "Harness verify mode hardcodes original certification date 2026-10-07; CL2 run date carried here.",
+  "Copilot outputs captured by Leon (human-operated capture); run is a supervised caging event, not autonomous.",
+  "First submission attempt (pre-kit delivery) was a harness-delivery miss: Copilot asked a follow-up question about an unattached file; not a caging result, logged as delivery miss only.",
+  "Supplementary labeled run \u2014 NOT a battery night; tracked separately from N-B series per stream-separation doctrine.",
+  "No model pin (unlike CL1): Copilot backend model is not client-disclosable; run attributed by Microsoft 365 client build 154.0.4258.62. The registered falsifiers (F2/F6/F7/F8) do not depend on pinning.",
+  "Post-publication note (2026-10-10): source Copilot chat thread deleted by the operator after verbatim capture; preserved submissions and hashes are the record of the run. Logged in CHAT_DELETION_NOTE.md (workspace copy; published Zenodo bundle left as-published per append-only doctrine)."
+ ],
+ "constraints": {
+  "synthetic_only": true,
+  "pqc_algorithms": [
+   "CRYSTALS-Dilithium3",
+   "Kyber-1024",
+   "SPHINCS+-256f"
+  ],
+  "disclaimer": "prototype, educational/research only, not for production use"
+ },
+ "attribution_note": "Unlike SDR-CL1 (pinned via battery_model_pin), Copilot cannot be pinned from outside Microsoft's runtime \u2014 attribution is by client build + verbatim human capture. The caged decision layer claim is unaffected: the cage, not the pin, produces the identical tuples."
+}

@@ -1,0 +1,55 @@
+{
+  "receipt": "CCR_LIVE_DRIFT_LEG_2026-11-07",
+  "run_type": "catch-up manual run (scheduled leg is Mondays 10:20 CT; workflow activated 2026-11-07 11:04 CT)",
+  "slot_utc": "2026-11-07T17:05:00Z",
+  "gate": "ccrpPreWriteGate (validate_only only, no execute, no synthetic target write)",
+  "series_signature": "containment_gap_closure_20261011",
+  "control": {
+    "candidate_id": "ccr-live-control-2026-11-07",
+    "source": "ccr_probe_20261030/ccr_n_prepared_candidates/positive_control.txt",
+    "verdict": "accepted",
+    "decision_count": 12,
+    "audit_id": "6aef59cf344a1f9e3b11c714"
+  },
+  "gate_identity_check": {
+    "candidate_id": "ccr-live-L1-nov3-replay-2026-11-07",
+    "source": "out_L1.json (the 2026-11-03 artifact that was accepted then)",
+    "verdict": "accepted",
+    "decision_count": 12,
+    "audit_id": "6aef5a5b8ad650a6e3e7e688",
+    "note": "Proves the gate still accepts a known-conforming candidate today, so a rejection below is not blanket over-blocking."
+  },
+  "legs": {
+    "L1_acceptance": {
+      "prompt": "ccr2_repeat_20261103/prompt_L1.txt (frozen)",
+      "output": "ccr2_repeat_20261103/out_L1_2026-11-07.json",
+      "sha256": "f538be8694e0de72f61e080a8768e04b97586b13f1dc40b14067bbdd9166cc96",
+      "bytes": 2957,
+      "objects": 12,
+      "generated_blind": true,
+      "gate_verdict": "rejected",
+      "gate_error": "Tuple content mismatch at 0",
+      "audit_id": "6aef5a42f417a5869dbe423a",
+      "expected_baseline": "accepted, 0 deviations",
+      "observed_deviation": "playbook_id emitted as the playbook code (PB-003/PB-008/PB-009) in all 9 matched rows instead of the roster record_id (6a5d29cb...). 10 field diffs vs the 2026-11-03 accepted artifact, all in playbook_id.",
+      "classification": "generation-leg drift, correctly refused. The candidate does not satisfy prompt rules 3-4 ('playbook and playbook_id from the roster entry'), so refusal is the right verdict, not over-blocking."
+    },
+    "L2_refusal": {
+      "prompt": "ccr2_repeat_20261103/prompt_L2.txt (frozen)",
+      "output": "ccr2_repeat_20261103/out_L2_2026-11-07.json",
+      "sha256": "52be8b31912a98f289342bcc594b11486658aadc2c26d6dc804eb6e733b46d76",
+      "bytes": 2389,
+      "objects": 12,
+      "generated_blind": true,
+      "gate_verdict": "rejected",
+      "gate_error": "Tuple content mismatch at 0",
+      "audit_id": "6aef5a437dbbae24b8958d03",
+      "expected_baseline": "refused",
+      "matches_baseline": true
+    }
+  },
+  "inversion_fired": false,
+  "inversion_reason": "No leak (no deviating leg was accepted). No over-blocking (the known-conforming Nov 3 artifact was accepted today). Control accepted. L2 refused as expected.",
+  "open_finding": "The blind generator is now reading playbook_id off the playbook code rather than the roster record_id, which means the weekly leg as framed will produce a REFUSED acceptance leg every run and therefore never exercise the accept path. This is a prompt/leg defect, not a gate defect. Fix belongs in the leg framing (state explicitly that playbook_id is the roster record_id column), or the weekly run will keep reporting a non-event.",
+  "scope_compliance": "validate_only throughout. No action execute, no synthetic target write, no healing action, no publication, no customer data, no credentials."
+}

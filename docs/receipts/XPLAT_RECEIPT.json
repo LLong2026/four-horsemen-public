@@ -1,0 +1,67 @@
+{
+  "series_signature": "dual_mesh_benchmark_xplat_20261012",
+  "executed_utc": "2026-10-12T17:10:00Z",
+  "status": "SERIES COMPLETE \u2014 XPLAT-1, XPLAT-2, XPLAT-3 all executed. Cross-substrate claim is now receipted: the deterministic mesh lookup outperforms the LLM-loop resolution on all three measured substrates.",
+  "prereg_and_amendments": "Prereg 68d34ed8 (BEFORE execution); Amendment 1 cd387d6e host swap Cloudflare edge (BEFORE execution); Amendment 2 26b1bfaf ENV-B fence normalization + 429 retry policy (BEFORE re-attempt; strict pass-1 score 9/20 disclosed alongside final 20/20)",
+  "gating": "Leon GO Oct 12: 'do both' (XPLAT-2) and 'run it' (XPLAT-3). OpenRouter precondition superseded by GO: account verified operational pay-as-you-go (prepaid balance $0.00, postpaid billing confirmed by test call before the leg).",
+  "corpus": "CORPUS_B1.json sha256 13295d197be59dd1266814bc2f961f1e55e974c61c642fd9c7a6a389668fee59 \u2014 identical corpus across all three legs (FB-6 echo-verified on XPLAT-2 by value-equality; JS 53.0->53 serialization nuance disclosed and adjudicated as representation)",
+  "XPLAT_1_mesh": {
+    "leg": "XPLAT-1 B1-mesh parity rerun",
+    "n": 200,
+    "misses": 0,
+    "min_ms": 0.00033999992865574313,
+    "median_ms": 0.00039000002516331733,
+    "p95_ms": 0.0005499999815583578,
+    "max_ms": 0.0023400000372930663,
+    "total_ms": 0.08906000209663034,
+    "all_runs_recorded": true
+  },
+  "XPLAT_2_enva": {
+    "leg": "XPLAT-2 B1-baseline ENV-A (Cloudflare Workers edge host)",
+    "n_requested": 20,
+    "n_valid": 20,
+    "n_failed": 0,
+    "min_ms": 4525,
+    "median_ms": 7386,
+    "p95_ms": 37027,
+    "max_ms": 37027,
+    "failures": [],
+    "all_runs_recorded": true
+  },
+  "XPLAT_3_envb": {
+    "leg": "XPLAT-3 B1-baseline ENV-B (OpenRouter deepseek/deepseek-chat, external substrate)",
+    "n_requested": 20,
+    "n_valid": 20,
+    "n_failed": 0,
+    "min_ms": 141.0,
+    "median_ms": 179.4,
+    "p95_ms": 1622.3,
+    "max_ms": 1622.3,
+    "pass1_strict_parse_score": 9,
+    "fence_wrapped_normalized": 9,
+    "rate_limit_retried": [
+      10,
+      11,
+      12
+    ],
+    "attempts_policy": "Amendment 2: up to 5 retries, backoff 5/10/20/40/80s, all attempts recorded",
+    "failures": [],
+    "all_runs_recorded": true
+  },
+  "xplat_1_note": "mesh parity: 200/200, 0 misses, median 0.00039ms vs 0.000443ms 20261011 \u2014 run-over-run determinism",
+  "xplat_2_speedup_median_over_median": 18938460.316526957,
+  "xplat_3_speedup_median_over_median": 459999.97032019176,
+  "speedups_human_readable": {
+    "XPLAT_2_ENVA_platform_loop_vs_mesh": "1.894e+07x",
+    "XPLAT_3_ENVB_external_deepseek_vs_mesh": "4.600e+05x"
+  },
+  "substrate_comparison_note": "ENV-B (raw external API, deepseek-chat) median 179.4ms is ~41x faster than ENV-A (Base44 conversation loop) median 7386ms \u2014 the conversation orchestration layer, not model inference, dominates the platform leg. The mesh lookup (median 0.00039ms) outperforms BOTH substrates: ~1.89e+07x vs platform loop, ~4.60e+05x vs raw external API.",
+  "disclosure": "ENV-B caveats disclosed: deepseek emits markdown fences on 9/20 first-pass outputs (normalization per Amendment 2, strict score also reported); 3 instances hit OpenRouter free-tier 429 rate limits and were retried per policy (all attempts recorded, successful-attempt wall-clock reported). External-substrate cost: ~$0.005 total (10-token test + 23 completions). No universal performance claim; each ratio characterizes its measured environment. Historical production figures (267x / 800ms->3ms) remain historical observations.",
+  "environment_readback": "frozen corpus sha256 identical across legs; XPLAT-2 bench conversations fresh at creation, purpose-built worker deployed+deleted; XPLAT-3 stateless API calls, provider-default sampling, raw responses preserved verbatim (envb_raw_*.json / envb_content_*.txt)",
+  "is_model_certification": false,
+  "reference_20261011": "hub-sandbox baseline: median 4509.1ms, n=20; mesh median 0.000443ms; ratio 1.018e+07x (DOI 10.5281/zenodo.23303081)",
+  "prototype_disclaimer": "This software is a prototype and is provided for educational and research purposes only. It is not intended for production use, commercial deployment, or safety-critical environments. All systems are experimental and may contain defects on them.",
+  "xplat3_speedup_median_over_median": 459999.97032019176,
+  "xplat3_speedup_human_readable": "4.600e+05x",
+  "cross_platform_summary": "Mesh lookup vs full LLM-loop resolution gap confirmed on three hosts and two substrates: hub sandbox (1.018e+07x), Cloudflare edge (1.894e+07x), external OpenRouter substrate (4.6e+05x). Platform-leg wall-clock is dominated by the conversation-loop orchestration (~7.4s) over raw model inference (~0.18s). All 20-tuple legs 20/20 valid after declared normalization; 200/200 mesh parity. Scoped to measured environments; no universal claim."
+}

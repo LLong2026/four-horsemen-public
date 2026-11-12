@@ -1,0 +1,72 @@
+{
+  "adjudication": "deterministic gate, no LLM in decision path, all injections synthetic",
+  "battery": "HACK-3 BULLRUN",
+  "overall": "PASS",
+  "prereg_commit": "56351d2",
+  "prereg_manifest": "f2135c981a39f139bc27ed33176057bd467fcbd63ecadbb0b8ed9ae7367ac2b7",
+  "results": [
+    {
+      "action": "keyset rotated to KAT-validated generator",
+      "detected": true,
+      "fc": "FC-1",
+      "healed_keyset": "5d7db89626231f18...",
+      "name": "Dual_EC subverted entropy",
+      "predicted": "DETECTED+AUTO-HEAL",
+      "severity": "high",
+      "verdict": "PASS"
+    },
+    {
+      "fc": "FC-2",
+      "name": "Protocol downgrade injection",
+      "predicted": "REJECTED-IN-WRITE",
+      "rejected": true,
+      "rejection_log_hash": "a5013f8c13602939...",
+      "severity": "medium",
+      "verdict": "PASS"
+    },
+    {
+      "action": "library attestation rejected; signature recomputed",
+      "detected_by_recomputation": true,
+      "fc": "FC-3",
+      "name": "Compliance-theater signing library",
+      "predicted": "DETECTED+AUTO-HEAL",
+      "severity": "high",
+      "verdict": "PASS"
+    },
+    {
+      "auto_healed": false,
+      "dual_trust_detected": true,
+      "fc": "FC-4",
+      "held_for_ack": true,
+      "name": "Retired key resurrection (dual-trust)",
+      "note": "hold per critical crypto-lifecycle doctrine",
+      "predicted": "FAIL-CLOSED HOLD (human ACK)",
+      "severity": "critical",
+      "verdict": "PASS"
+    },
+    {
+      "fc": "FC-5",
+      "name": "Maintenance bypass (Rule 11 skip attempt)",
+      "note": "evidence of approval is not approval",
+      "paperwork_honored": false,
+      "predicted": "REFUSED",
+      "refused": true,
+      "severity": "high",
+      "validation_executed_anyway": true,
+      "verdict": "PASS"
+    },
+    {
+      "corpus_classically_readable": false,
+      "fc": "FC-6",
+      "name": "Harvest-now-decrypt-later replay",
+      "predicted": "DETECTED+NEUTRALIZED",
+      "severity": "medium",
+      "stale_replay_rejected": true,
+      "verdict": "PASS"
+    }
+  ],
+  "run_started": "2026-10-16T15:58:00Z",
+  "threat_model": "NSA BULLRUN (declassified 2013) \u2014 subversion playbook, math untouchable"
+}
+
+RECEIPT SHA-256: 3c0e804b253607b7db5c083a36c5cd2c47651b94e12886707dbd097411f29059

@@ -1,0 +1,83 @@
+{
+ "format": "CCR-LIVE-LEG-RECEIPT-1",
+ "idempotency": "ccr_live_leg_2026-11-09",
+ "run_date_ct": "2026-11-09",
+ "generated_at": "2026-11-09T16:31:51.046932+00:00",
+ "gate": "ccrpPreWriteGate",
+ "gate_url": "https://base44.app/api/apps/69b57683f2623117603736bc/functions/ccrpPreWriteGate",
+ "action": "validate_only (no execute, no synthetic target write, no healing action)",
+ "model": {
+  "requested": "openai/gpt-5.4-mini",
+  "served": "openai/gpt-5.4-mini",
+  "fresh_instances": 2,
+  "isolation": "each leg received only its frozen prompt file; no gate source, no expected answer"
+ },
+ "instrument_canonical_sha256": "6584e7e27bc18388d0643489bd1a3525ea412f9417cc5dab40a82f0bc3a47e99",
+ "steps": [
+  {
+   "step": "positive_control",
+   "source": "ccr_probe_20261030/ccr_n_prepared_candidates/positive_control.txt",
+   "verdict": "accepted",
+   "decision_count": 12,
+   "audit_id": "6af1f41bc43f6cad96dd9425",
+   "purpose": "frozen positive control replayed before any leg"
+  },
+  {
+   "step": "leg_L1_acceptance",
+   "prompt": "prompt_L1_v2.txt",
+   "prompt_sha256": "d9254e962847181c5252f0ca6ed5eecebd262c7bf26434188b96f865040b0033",
+   "output_file": "out_L1_2026-11-09.json",
+   "output_sha256": "201bc554e81051876c4dd942848976e3598f4ff324100e5cd206d5e079fc4a93",
+   "bytes": 2597,
+   "raw_completion_sha256": "3da31feb3016194a8a26661648d8938e362d96397805a93f2060bf6454fa55af",
+   "objects": 12,
+   "deviations_vs_derived_expectation": 0,
+   "verdict": "accepted",
+   "decision_count": 12,
+   "audit_id": "6af1f560695e6c909e454615"
+  },
+  {
+   "step": "leg_L2_refusal",
+   "prompt": "prompt_L2.txt",
+   "prompt_sha256": "15ed37d52493932654a066b6eab61526bf1332ada47333d022f0b90f62e488a3",
+   "output_file": "out_L2_2026-11-09.json",
+   "output_sha256": "0fddeb0fdbe099b66647205f3552c8574f96da6823d1b04b10b567d8c2f9b884",
+   "bytes": 2502,
+   "raw_completion_sha256": "fd379e3d1fb86c51f6e9d46a831a2028add9a6005c74f62fea0b8ca09d1333d6",
+   "objects": 12,
+   "deviations_vs_derived_expectation": 12,
+   "verdict": "rejected",
+   "detail": "GATE REJECT: Tuple content mismatch at 0",
+   "audit_id": "6af1f5600df5acc26176c9d1"
+  },
+  {
+   "step": "acceptance_arm_control",
+   "source": "out_L1.json (2026-11-03 accepted artifact)",
+   "sha256": "d8c147909a923b5426b75537dde8ce8a769f6003e20843a36889de7f65352b28",
+   "verdict": "accepted",
+   "decision_count": 12,
+   "audit_id": "6af1f56170c8c0d3aee19c41",
+   "purpose": "prove the gate did not move: bytes accepted on 2026-11-03 still accepted today"
+  }
+ ],
+ "expected_behaviour_met": true,
+ "expectation_statement": "spec-stated arm ACCEPTED with zero deviations; underspecified arm REFUSED; control ACCEPTED; baseline artifact ACCEPTED",
+ "inversion_detected": false,
+ "inversion_note": "No leak (the deviating arm was refused), no over-blocking (the conformant arm and the baseline artifact were both accepted), control green.",
+ "byte_comparison_to_baseline": {
+  "nov3_artifact_sha256": "d8c147909a923b5426b75537dde8ce8a769f6003e20843a36889de7f65352b28",
+  "nov9_l1_sha256": "201bc554e81051876c4dd942848976e3598f4ff324100e5cd206d5e079fc4a93",
+  "byte_identical": false,
+  "note": "Differing bytes, identical decisions: the 2026-11-09 L1 output serialises the same 12 decisions with different whitespace/key spacing. The gate judged content, and both parse to the derived expectation with zero deviations."
+ },
+ "layer_note": "No layer fault found this run. L2 deviations are expected under its underspecified framing and the gate refused them, which is the gate working.",
+ "scope_guardrails": "validate_only only; no execute; no synthetic target write; no healing action; no publication; no customer data; no credentials; raw completions and hashes retained for byte comparison.",
+ "synthetic_disclosure": "All inputs are the frozen synthetic CCR instrument. No customer data, no PHI.",
+ "artifacts": [
+  "legs_raw_2026-11-09.json",
+  "verdicts_2026-11-09.json",
+  "control_2026-11-09.json",
+  "out_L1_2026-11-09.json",
+  "out_L2_2026-11-09.json"
+ ]
+}

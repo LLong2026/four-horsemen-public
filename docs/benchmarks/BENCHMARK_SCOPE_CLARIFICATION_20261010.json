@@ -1,0 +1,16 @@
+{
+  "created_at_utc": "2026-10-10T19:40:23.510018+00:00",
+  "validator_checks_completed": 6000,
+  "model_concurrency_phase": "BLOCKED_BEFORE_INFERENCE",
+  "blocker_class": "workflow_fresh_conversation_provisioning",
+  "runtime_capacity": "NOT_MEASURED",
+  "global_api_conversation_limit": "NOT_ESTABLISHED",
+  "model_setting_confirmed": "gpt_6_sol",
+  "model_setting_changed": false,
+  "dual_mesh_benchmark": "NOT_MEASURED",
+  "original_receipt_sha256": {
+    "STRESS_TEST_REPORT.md": "1641d255ae63bd11013568145c54ece492ec98b7bff8a891700af176dc66c59b",
+    "BENCHMARK_STRESS_RESULTS.json": "604655603297a2af802a2be67ee248932d5ce9d611bd3c7bd13d544a768b8cbb",
+    "benchmark_runner.py": "445d52ca922c1e080b79910ca4be16ff9b55fbd5c959522c24621f1041838e43"
+  }
+}

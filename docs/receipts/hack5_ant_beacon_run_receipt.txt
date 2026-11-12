@@ -1,0 +1,69 @@
+{
+  "adjudication": "deterministic gate, no LLM, all synthetic",
+  "battery": "HACK-5 ANT BEACON",
+  "overall": "PASS",
+  "prereg_commit": "38244eb",
+  "prereg_manifest": "d3df2e1f1238a0f4e446ee98bf1ecff1658178b4a4677d2fe220bdbc63bb7ad8",
+  "results": [
+    {
+      "action": "computed status (degraded) overrules reported (healthy)",
+      "detected_by_parity": true,
+      "fc": "FC-1",
+      "name": "False-healthy heartbeat",
+      "predicted": "DETECTED",
+      "severity": "high",
+      "verdict": "PASS"
+    },
+    {
+      "action": "re-stamped replay fails identity binding",
+      "binding_failed": true,
+      "fc": "FC-2",
+      "name": "Heartbeat replay",
+      "predicted": "REJECTED",
+      "severity": "high",
+      "verdict": "PASS"
+    },
+    {
+      "action": "manifest-of-record overrules monitor; monitor quarantined pending ACK",
+      "divergence_detected": true,
+      "fc": "FC-3",
+      "held_for_ack": true,
+      "monitor_quarantined": true,
+      "name": "Compromised aggregator (lying monitor)",
+      "predicted": "DETECTED+QUARANTINE+HOLD",
+      "severity": "critical",
+      "verdict": "PASS"
+    },
+    {
+      "action": "expected-count guard flags silent absence",
+      "fc": "FC-4",
+      "missing_report_detected": true,
+      "name": "Selective suppression (missing report)",
+      "predicted": "DETECTED",
+      "severity": "medium",
+      "verdict": "PASS"
+    },
+    {
+      "action": "score recomputed from raw metrics, never imported",
+      "detected": true,
+      "fc": "FC-5",
+      "name": "Inflated health score",
+      "predicted": "DETECTED",
+      "recomputed_score": 79.0,
+      "reported_score": 99.0,
+      "severity": "high",
+      "verdict": "PASS"
+    },
+    {
+      "action": "state hash must be identical across watchers; divergence = integrity failure",
+      "fc": "FC-6",
+      "hash_divergence": true,
+      "name": "Split-brain sensor",
+      "predicted": "DETECTED",
+      "severity": "high",
+      "verdict": "PASS"
+    }
+  ],
+  "threat_model": "NSA ANT catalog beacon \u2014 implant lying to its own monitoring"
+}
+RECEIPT SHA-256: 0bef6673ef905f4ce1688d330179ffa6fbeba17fd50fd74f18c2f2da50ca7b93

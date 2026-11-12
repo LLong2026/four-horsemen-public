@@ -1,0 +1,45 @@
+{
+  "source": "Coordinator record of native read_agent_api/set_agent_model/call_agent_api tool responses, not provider attestation",
+  "agent_id": "69b57683f2623117603736bc",
+  "original_model": "gpt_6_sol",
+  "original_memory_config": {
+    "enabled": true,
+    "scope": "both",
+    "include_other_conversation_context": true,
+    "instructions": null
+  },
+  "memory_disable": {
+    "patch_reported": "timeout",
+    "readback_verified": true,
+    "enabled": false,
+    "include_other_conversation_context": false
+  },
+  "confirmed_pins": [
+    {
+      "model": "gpt_5_6_luna",
+      "native_set_applied": true,
+      "memory_enabled_in_returned_settings": false
+    },
+    {
+      "model": "glm_5_2_superagent",
+      "native_set_applied": true,
+      "memory_enabled_in_returned_settings": false
+    },
+    {
+      "model": "claude_opus_5_5",
+      "native_set_applied": true,
+      "memory_enabled_in_returned_settings": false,
+      "subsequent_readback_confirmed": true
+    }
+  ],
+  "restoration_verified": true,
+  "restoration_verified_at_utc": "2026-10-10T18:27:15.757749+00:00",
+  "restored_model": "gpt_6_sol",
+  "restored_memory_config": {
+    "enabled": true,
+    "scope": "both",
+    "include_other_conversation_context": true,
+    "instructions": null
+  },
+  "restoration_provenance": "Native PATCH timed out; native read_agent_api confirmed original settings restored; no retry"
+}

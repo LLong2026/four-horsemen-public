@@ -1,0 +1,212 @@
+{
+  "created_at_utc": "2026-10-10T18:27:15.716115+00:00",
+  "experiment": "PENTA contract v2 supplementary local model replay",
+  "engines_completed": 4,
+  "distinct_conversations": 8,
+  "cases_per_response": 12,
+  "decisions_observed": 96,
+  "pairs_passed": 4,
+  "expected_canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+  "prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+  "memory_enabled_during_capture": false,
+  "public_preregistration": false,
+  "published": false,
+  "external_deepseek": "PENDING",
+  "dual_mesh_benchmark": "NOT_MEASURED",
+  "capture_method": "Browser-created empty conversations, direct Agent API exact-file prompt send and response capture",
+  "attribution": "Platform model settings by construction; no provider model attestation",
+  "limitations": [
+    "Shared agent instructions/workspace/expected answers; not blind or air-gapped",
+    "Capture route and six added boundary cases differ from v1; no single-change causal inference",
+    "Canonical JSON equality is not raw response-byte equality",
+    "Synthetic decision declarations; no live healing or cage interception verified",
+    "No stress/load or generalized reliability claim",
+    "Original failures unchanged, no retroactive pass"
+  ],
+  "engines": [
+    {
+      "engine_configuration": "gpt_5_6_luna",
+      "runs": [
+        {
+          "capture": "A",
+          "conversation_id": "6aca80656a0e89df732875bd",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "server_prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "response_body_sha256": "e7788169f62d1f79fcd82df68712649b222ec03a77a8fc9dad03a3a2ea72c2b0",
+          "server_content_matches": true,
+          "validator": {
+            "accepted": true,
+            "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+            "decision_count": 12,
+            "execution_performed": false
+          },
+          "reported_total_tool_calls": 0,
+          "reported_tool_iterations": 0,
+          "stop_reason": null
+        },
+        {
+          "capture": "B",
+          "conversation_id": "6aca80cb16e06d04d385962b",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "server_prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+          "response_body_sha256": "88848ae5056f6b268ef5e1499b6d92e4a7eddd18ac0004c6a1d77992a4dd2504",
+          "server_content_matches": true,
+          "validator": {
+            "accepted": true,
+            "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+            "decision_count": 12,
+            "execution_performed": false
+          },
+          "reported_total_tool_calls": 0,
+          "reported_tool_iterations": 0,
+          "stop_reason": null
+        }
+      ],
+      "pair_pass": true,
+      "canonical_pair_equal": true,
+      "raw_content_pair_equal": true
+    },
+    {
+      "engine_configuration": "glm_5_2_superagent",
+      "runs": [
+        {
+          "capture": "A",
+          "conversation_id": "6aca80f5eef9101e15263e40",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "server_prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "201bc554e81051876c4dd942848976e3598f4ff324100e5cd206d5e079fc4a93",
+          "response_body_sha256": "41da3e131371ba61681832164ffa0810cbf654f02975e6ce6606cf83fcd4fcbc",
+          "server_content_matches": true,
+          "validator": {
+            "accepted": true,
+            "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+            "decision_count": 12,
+            "execution_performed": false
+          },
+          "reported_total_tool_calls": 0,
+          "reported_tool_iterations": 0,
+          "stop_reason": null
+        },
+        {
+          "capture": "B",
+          "conversation_id": "6aca80fe78725be785c8f9a7",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "server_prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "54088d70db96b65ce30336d5e5793141a6ae78fecb2bfcee940e7ca3035f1037",
+          "response_body_sha256": "4098fcb9e7e5968ca95d87217986de1a5f46e1092156b85e07d3487e86901c12",
+          "server_content_matches": true,
+          "validator": {
+            "accepted": true,
+            "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+            "decision_count": 12,
+            "execution_performed": false
+          },
+          "reported_total_tool_calls": 0,
+          "reported_tool_iterations": 0,
+          "stop_reason": null
+        }
+      ],
+      "pair_pass": true,
+      "canonical_pair_equal": true,
+      "raw_content_pair_equal": false
+    },
+    {
+      "engine_configuration": "claude_opus_5_5",
+      "runs": [
+        {
+          "capture": "A",
+          "conversation_id": "6aca812efe19613e4bc2ee93",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "server_prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "d2ffe4be40f54fe99721ad48a0f0fd0a5e7460c3065ae126f5e164a747555942",
+          "response_body_sha256": "ef543024ddafaa840b637c13aefde170f0f8307615be0307a7cb93c129923a50",
+          "server_content_matches": true,
+          "validator": {
+            "accepted": true,
+            "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+            "decision_count": 12,
+            "execution_performed": false
+          },
+          "reported_total_tool_calls": 0,
+          "reported_tool_iterations": 0,
+          "stop_reason": null
+        },
+        {
+          "capture": "B",
+          "conversation_id": "6aca8139b4e52d4a950c00f3",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "server_prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "d2ffe4be40f54fe99721ad48a0f0fd0a5e7460c3065ae126f5e164a747555942",
+          "response_body_sha256": "d10a7f96186340e725698b00c16312c3b389afa829e54253013a27d33978fa38",
+          "server_content_matches": true,
+          "validator": {
+            "accepted": true,
+            "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+            "decision_count": 12,
+            "execution_performed": false
+          },
+          "reported_total_tool_calls": 0,
+          "reported_tool_iterations": 0,
+          "stop_reason": null
+        }
+      ],
+      "pair_pass": true,
+      "canonical_pair_equal": true,
+      "raw_content_pair_equal": true
+    },
+    {
+      "engine_configuration": "gpt_6_sol",
+      "runs": [
+        {
+          "capture": "A",
+          "conversation_id": "6aca8147ea55d508e276dc9d",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "server_prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "201bc554e81051876c4dd942848976e3598f4ff324100e5cd206d5e079fc4a93",
+          "response_body_sha256": "412dc91ed2737770b15b24d3d6496718c41e7584d39d0cf2a4142aa1089c9e2b",
+          "server_content_matches": true,
+          "validator": {
+            "accepted": true,
+            "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+            "decision_count": 12,
+            "execution_performed": false
+          },
+          "reported_total_tool_calls": 0,
+          "reported_tool_iterations": 0,
+          "stop_reason": null
+        },
+        {
+          "capture": "B",
+          "conversation_id": "6aca81533f52ae4861222b4c",
+          "preflight_empty": true,
+          "user_prompt_count": 1,
+          "server_prompt_sha256": "c3d4aac852e9eaaee256467d7a1570e7536bc77a1c2ca5b2110ca855bb7bf367",
+          "content_sha256": "54088d70db96b65ce30336d5e5793141a6ae78fecb2bfcee940e7ca3035f1037",
+          "response_body_sha256": "dccf7e95ca4426c19bdec1af062e2412171311fa46c8d535dd9677ce0db2d10f",
+          "server_content_matches": true,
+          "validator": {
+            "accepted": true,
+            "canonical_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+            "decision_count": 12,
+            "execution_performed": false
+          },
+          "reported_total_tool_calls": 0,
+          "reported_tool_iterations": 0,
+          "stop_reason": null
+        }
+      ],
+      "pair_pass": true,
+      "canonical_pair_equal": true,
+      "raw_content_pair_equal": false
+    }
+  ]
+}

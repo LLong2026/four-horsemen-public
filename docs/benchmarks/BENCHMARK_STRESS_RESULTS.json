@@ -1,0 +1,224 @@
+{
+  "run_id": "penta_synthetic_stress_20261010T192400Z",
+  "started_at_utc": "2026-10-10T19:25:26Z",
+  "instrument_sha256": "70b667d309f0d32a7ab74c85bcb29229df996e2e843ccc723492c610bd4fa25f",
+  "canonical_expected_sha256": "ba71f6d6f1299632281798ae86247ae26d419eb6ce16fcb260013c52b38fa504",
+  "expected_tuple_count": 12,
+  "stages": [
+    {
+      "stage": "s1_w1",
+      "workers": 1,
+      "checks_target": 2000,
+      "valid_run": 1000,
+      "adv_run": 1000,
+      "valid_accepts": 1000,
+      "valid_rejects": 0,
+      "adv_accepts": 0,
+      "adv_rejects": 1000,
+      "stop_reason": "completed",
+      "valid_latency": {
+        "count": 1000,
+        "p50_ms": 0.0942,
+        "p95_ms": 0.1194,
+        "mean_ms": 0.0972,
+        "min_ms": 0.0923,
+        "max_ms": 0.1926
+      },
+      "adv_latency": {
+        "count": 1000,
+        "p50_ms": 0.0598,
+        "p95_ms": 0.0763,
+        "mean_ms": 0.0504,
+        "min_ms": 0.0041,
+        "max_ms": 0.0915
+      },
+      "adv_by_type": {
+        "wrong_position_type": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "extra_key": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "case_flip": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "extra_element": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_status": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_key_order": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "null_playbook": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_match_type": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "nonfinite": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "dup_key": {
+          "accepted": 0,
+          "rejected": 100
+        }
+      },
+      "errors": []
+    },
+    {
+      "stage": "s2_w2",
+      "workers": 2,
+      "checks_target": 2000,
+      "valid_run": 1000,
+      "adv_run": 1000,
+      "valid_accepts": 1000,
+      "valid_rejects": 0,
+      "adv_accepts": 0,
+      "adv_rejects": 1000,
+      "stop_reason": "completed",
+      "valid_latency": {
+        "count": 1000,
+        "p50_ms": 0.1306,
+        "p95_ms": 0.1729,
+        "mean_ms": 0.2391,
+        "min_ms": 0.1223,
+        "max_ms": 74.6828
+      },
+      "adv_latency": {
+        "count": 1000,
+        "p50_ms": 0.0638,
+        "p95_ms": 0.0901,
+        "mean_ms": 0.1335,
+        "min_ms": 0.0047,
+        "max_ms": 10.1172
+      },
+      "adv_by_type": {
+        "wrong_position_type": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "nonfinite": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_match_type": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "case_flip": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "dup_key": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "extra_element": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "null_playbook": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_key_order": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "extra_key": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_status": {
+          "accepted": 0,
+          "rejected": 100
+        }
+      },
+      "errors": []
+    },
+    {
+      "stage": "s3_w4",
+      "workers": 4,
+      "checks_target": 2000,
+      "valid_run": 1000,
+      "adv_run": 1000,
+      "valid_accepts": 1000,
+      "valid_rejects": 0,
+      "adv_accepts": 0,
+      "adv_rejects": 1000,
+      "stop_reason": "completed",
+      "valid_latency": {
+        "count": 1000,
+        "p50_ms": 0.13,
+        "p95_ms": 0.1829,
+        "mean_ms": 0.4384,
+        "min_ms": 0.1228,
+        "max_ms": 140.138
+      },
+      "adv_latency": {
+        "count": 1000,
+        "p50_ms": 0.0661,
+        "p95_ms": 0.1182,
+        "mean_ms": 0.1063,
+        "min_ms": 0.0047,
+        "max_ms": 13.9238
+      },
+      "adv_by_type": {
+        "extra_key": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "case_flip": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "extra_element": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_status": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_key_order": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "null_playbook": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_match_type": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "nonfinite": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "dup_key": {
+          "accepted": 0,
+          "rejected": 100
+        },
+        "wrong_position_type": {
+          "accepted": 0,
+          "rejected": 100
+        }
+      },
+      "errors": []
+    }
+  ],
+  "finished_at_utc": "2026-10-10T19:25:27Z",
+  "overall_stop_reason": "completed"
+}

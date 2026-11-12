@@ -1,0 +1,20 @@
+{
+  "battery": "HACK-3 BULLRUN",
+  "run_date": "2026-10-16",
+  "prereg_commit": "56351d2",
+  "prereg_manifest_sha256": "f2135c981a39f139bc27ed33176057bd467fcbd63ecadbb0b8ed9ae7367ac2b7",
+  "run_receipt_sha256": "3c0e804b253607b7db5c083a36c5cd2c47651b94e12886707dbd097411f29059",
+  "falsifiers": [
+    "FC-1 subverted entropy -> KAT divergence detect+heal",
+    "FC-2 protocol downgrade -> rejected-in-write",
+    "FC-3 compliance theater -> detected by recomputation",
+    "FC-4 retired key resurrection -> fail-closed hold, human ACK",
+    "FC-5 maintenance bypass -> refused, Rule 11 absolute",
+    "FC-6 HNDL replay -> neutralized, freshness binding"
+  ],
+  "score": "6/6 PASS",
+  "decision_path": "deterministic, no LLM",
+  "injections": "synthetic, hub-local",
+  "fc4_resolution": "Leon ACK on authorized channel 2026-10-16 ~11:01 CT; stale ACL entry purged; single-trust confirmed on Dilithium3",
+  "threat_model": "NSA BULLRUN (declassified 2013) subversion playbook; lattice math untouchable"
+}

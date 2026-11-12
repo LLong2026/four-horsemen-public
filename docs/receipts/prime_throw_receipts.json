@@ -1,0 +1,128 @@
+{
+  "rig": "PRIME-THROW v1.0",
+  "claim": "OpenAI ETH-refutation, public release 2026-10-26, provisional/unrefereed",
+  "ground_truth": [
+    {
+      "n": 14,
+      "m": 59,
+      "prime_seed": 2,
+      "count": 0,
+      "count_mod": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 14,
+      "m": 59,
+      "prime_seed": 3,
+      "count": 1,
+      "count_mod": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "n": 14,
+      "m": 59,
+      "prime_seed": 5,
+      "count": 0,
+      "count_mod": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 16,
+      "m": 68,
+      "prime_seed": 2,
+      "count": 0,
+      "count_mod": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "n": 16,
+      "m": 68,
+      "prime_seed": 3,
+      "count": 4,
+      "count_mod": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "n": 16,
+      "m": 68,
+      "prime_seed": 5,
+      "count": 4,
+      "count_mod": [
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "n": 18,
+      "m": 76,
+      "prime_seed": 2,
+      "count": 22,
+      "count_mod": [
+        22,
+        22,
+        22
+      ]
+    },
+    {
+      "n": 18,
+      "m": 76,
+      "prime_seed": 3,
+      "count": 12,
+      "count_mod": [
+        12,
+        12,
+        12
+      ]
+    },
+    {
+      "n": 18,
+      "m": 76,
+      "prime_seed": 5,
+      "count": 25,
+      "count_mod": [
+        25,
+        25,
+        25
+      ]
+    }
+  ],
+  "scaling": [
+    {
+      "n": 14,
+      "bruteforce_seconds": 0.001
+    },
+    {
+      "n": 16,
+      "bruteforce_seconds": 0.005
+    },
+    {
+      "n": 18,
+      "bruteforce_seconds": 0.022
+    },
+    {
+      "n": 20,
+      "bruteforce_seconds": 0.106
+    },
+    {
+      "n": 22,
+      "bruteforce_seconds": 2.037
+    }
+  ],
+  "doctrine": "Any claimed subexponential #3SAT counter must reproduce these counts exactly. Instances reproducible from prime seeds."
+}

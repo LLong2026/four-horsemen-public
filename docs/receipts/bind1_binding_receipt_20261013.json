@@ -1,0 +1,120 @@
+{
+  "started": "2026-10-13T02:14:12.880163+00:00",
+  "verifier": "BIND-1 v1.0",
+  "falsifiers": {
+    "F1_commits_resolvable": "PASS",
+    "F2_dois_resolve": "PASS",
+    "F3_hash_chain_local": "PASS",
+    "F4_roundtrip_download": "PASS"
+  },
+  "tuples": [
+    {
+      "type": "ledger->commit",
+      "ref": "0ddac57",
+      "found_in": "lindy_check",
+      "verdict": "PASS"
+    },
+    {
+      "type": "ledger->commit",
+      "ref": "c63f7b6",
+      "found_in": "fh_pub",
+      "verdict": "PASS"
+    },
+    {
+      "type": "ledger->commit",
+      "ref": "d9cc042",
+      "found_in": "fh_pub",
+      "verdict": "PASS"
+    },
+    {
+      "type": "ledger->commit",
+      "ref": "dddd35c",
+      "found_in": "fh_pub",
+      "verdict": "PASS"
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.20483110",
+      "verdict": "PASS",
+      "detail": "How to Patent in 2026 \u2014 A Complete Guide"
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23152633",
+      "verdict": "PASS",
+      "detail": "Sovereign Briefing: A First Receipted Human-in-the-Loop Critical Resolution in SQUIRL OS, "
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23173948",
+      "verdict": "PASS",
+      "detail": "Sovereign Briefing: First Receipted Human-in-the-Loop Critical Resolution in an Autonomous"
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23265723",
+      "verdict": "PASS",
+      "detail": "MILESTONE: First Documented Caging of an LLM"
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23266727",
+      "verdict": "PASS",
+      "detail": "Deterministic Caging of Probabilistic Large Language Models: Architecture, Field Receipt, "
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23270010",
+      "verdict": "PASS",
+      "detail": "Sovereign Briefing: First Receipted Human-in-the-Loop Critical Resolution in an Autonomous"
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23270092",
+      "verdict": "PASS",
+      "detail": "Sovereign Briefing: A First Receipted Human-in-the-Loop Critical Resolution in SQUIRL OS, "
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23274887",
+      "verdict": "PASS",
+      "detail": "SDR-CL1: First Model-Attribution Replay of a Registered Substrate Determinism Gauntlet Acr"
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23284295",
+      "verdict": "PASS",
+      "detail": "SDR-CL2: Third-Vendor Model-Attribution Replay of a Registered Substrate Determinism Gaunt"
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23284729",
+      "verdict": "PASS",
+      "detail": "Deterministic Caging of Probabilistic Large Language Models: Architecture, Field Receipt, "
+    },
+    {
+      "type": "ledger->DOI",
+      "ref": "10.5281/zenodo.23285190",
+      "verdict": "PASS",
+      "detail": "How to Patent in 2026 \u2014 A Complete Guide"
+    },
+    {
+      "type": "ledger->sha256",
+      "ref": "CCR-1 results hash",
+      "verdict": "PASS"
+    },
+    {
+      "type": "DOI->bytes round-trip",
+      "ref": "23288189",
+      "verdict": "PASS"
+    }
+  ],
+  "notes": [
+    "F1: 4 ledger commit refs across 24 local repos: {\"0ddac57\": \"lindy_check\", \"c63f7b6\": \"fh_pub\", \"d9cc042\": \"fh_pub\", \"dddd35c\": \"fh_pub\"}",
+    "F2: 11 unique DOIs checked via Zenodo API",
+    "F3: CCR-1 recorded hash matched among 3 local candidates",
+    "F4: round-trip on CCR-1 deposited file: Zenodo MD5 ccd0c9ae... matches download AND local artifact penta_publication/repo/ccr1/CAGE_CONTAINMENT_RECEIPT.pdf is BYTE-IDENTICAL to the deposited file. Full chain closed: ledger -> commit -> sha256 -> DOI -> bytes."
+  ],
+  "finished": "2026-10-13T02:14:24.290647+00:00",
+  "overall": "ALL PASS"
+}

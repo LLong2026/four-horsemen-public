@@ -1,0 +1,14 @@
+{
+  "verified_at_utc": "2026-10-11T16:19:44.242725+00:00",
+  "model": "default",
+  "model_label": "Automatic",
+  "memory_config": {
+    "enabled": true,
+    "scope": "both",
+    "include_other_conversation_context": true,
+    "instructions": null
+  },
+  "verification": "Native read_agent_api after PATCH timeout confirmed applied; no retry",
+  "completion": "incomplete, delivery stopped; no additional engine submission",
+  "public_shipping": "not performed; draft requires Leon approval"
+}

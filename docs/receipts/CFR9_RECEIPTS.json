@@ -1,0 +1,101 @@
+{
+ "ceremony": "CFR-9 Intelligent Routing Crossfire (IR-2)",
+ "date": "2026-10-19",
+ "digest": "bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909",
+ "artifact": "SQUIRL-IP-011 Caging the Large Language Model patent draft",
+ "scope_stamp": "cfr9_crossfire_2026-10-19",
+ "verdict": "PASS (10/10 broadcast, 10/10 keyless byte-exact read-back; BTC block inclusion pending at seal)",
+ "legs": {
+  "sol": {
+   "sig": "2BZeGFzuYtVAvqJNGm8sGWrhADrAgR5avSwrmh4bUD5ss5SfscRcchxCcueshQFQvseGKf6mbVdtUUbUkgUPpH7",
+   "status": "confirmed",
+   "seconds": 2.3,
+   "link": "https://solscan.io/tx/2BZeGFzuYtVAvqJNGm8sGWrhADrAgR5avSwrmh4bUD5ss5SfscRcchxCcueshQFQvseGKf6mbVdtUUbUkgUPpH7",
+   "payload_hex": "5351445204bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909",
+   "memo_encoding": "hex-ASCII (UTF-8 requirement, proven DeWR form)"
+  },
+  "algo": {
+   "txid": "VRAP53KKBN55EXZQF5EYYSEUZTTG6PMQWY6F7U4CA26LEEYAVOGQ",
+   "round": 66144322,
+   "seconds": 4.9,
+   "link": "https://allo.info/tx/VRAP53KKBN55EXZQF5EYYSEUZTTG6PMQWY6F7U4CA26LEEYAVOGQ",
+   "payload_hex": "5351445204bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909"
+  },
+  "avax": {
+   "txid": "0x40c141cb06d3790f568281897220bd20a8355f05898caa69595eddf532896d34",
+   "confirmed": true,
+   "block": 98002159,
+   "gas_used": 21592,
+   "seconds": 2.2,
+   "link": "https://snowtrace.io/tx/0x40c141cb06d3790f568281897220bd20a8355f05898caa69595eddf532896d34",
+   "payload_hex": "5351445204bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909"
+  },
+  "stellar": {
+   "hash": "26b423f875b2a55a62cc087bc464a94d421178c66f1c2f6de1d979271ec8afbc",
+   "ledger": 65031803,
+   "confirmed": true,
+   "seconds": 6.6,
+   "link": "https://stellar.expert/explorer/public/tx/26b423f875b2a55a62cc087bc464a94d421178c66f1c2f6de1d979271ec8afbc",
+   "payload_hex": "5351445204bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909"
+  },
+  "xrp": {
+   "txid": "7F5C069397EDE77037999A3304F71B624146D9B06C83BC74D077D9355A1C66D2",
+   "status": "VALIDATED",
+   "seconds": 8.4,
+   "link": "https://livenet.xrpl.org/transactions/7F5C069397EDE77037999A3304F71B624146D9B06C83BC74D077D9355A1C66D2",
+   "payload_hex": "5351445204bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909"
+  },
+  "dot": {
+   "txid": "0x96e72de9d2cd6af6106c720b97e6633b6978d53fa8ca9ab34ad5d303c2c7784d",
+   "included": true,
+   "block": "0xdda516617c265d60520b9c7db6ae9282ee29688ee7c97dd20df92a2142e8072f",
+   "seconds": 10.0,
+   "fee": 195326835,
+   "link": "https://polkadot.subscan.io/extrinsic/0xdda51661",
+   "payload_hex": "5351445204bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909"
+  },
+  "eth": {
+   "txid": "0xdf2c3f1bab0489f42b162c28a762fde5f02eed5d6ab82ac6c8fdfa98d06ab712",
+   "confirmed": false,
+   "block": null,
+   "gas_used": null,
+   "seconds": 43.4,
+   "link": "https://etherscan.io/tx/0xdf2c3f1bab0489f42b162c28a762fde5f02eed5d6ab82ac6c8fdfa98d06ab712",
+   "payload_hex": "5351445204bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909"
+  },
+  "doge": {
+   "txid": "a634c34e2242612627c8604e36acb1789715eb7354803c5b4dcd5025979ec1b4",
+   "push": 200,
+   "seconds": 0.9,
+   "link": "https://dogechain.info/tx/a634c34e2242612627c8604e36acb1789715eb7354803c5b4dcd5025979ec1b4",
+   "payload_hex": "5351445204bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909",
+   "utxo": "075e7656667e5129291c68d29b9acdfc29ef635bc7f4011de311364d6fc329aa:1"
+  },
+  "btc": {
+   "txid": "83f7ba0db20ac13e19c30dfa3adb19b997fbf5181b7619b6fe13228f10010d0b",
+   "fee_sats": 790,
+   "seconds": 0.3,
+   "link": "https://mempool.space/tx/83f7ba0db20ac13e19c30dfa3adb19b997fbf5181b7619b6fe13228f10010d0b",
+   "payload_hex": "5351445204bf9b8b4c608cdf68655efd9a1d8bce80f55969c0196fac9b9f1abea377c28909"
+  },
+  "cardano": {
+   "txid": "edea6182bcbfaa2dd488e7073468d62b5c58134b8873896f5abd3bba59b32b1c",
+   "submit": "OK",
+   "seconds": 0.6,
+   "fee_lovelace": 172000,
+   "link": "https://cardanoscan.io/transaction/edea6182bcbfaa2dd488e7073468d62b5c58134b8873896f5abd3bba59b32b1c"
+  }
+ },
+ "readback_g3": "PASS all 10 rails",
+ "gates": {
+  "G1": "PASS",
+  "G2": "PASS",
+  "G3": "PASS",
+  "G4": "PASS",
+  "G5": "PASS"
+ },
+ "pending": [
+  "BTC block inclusion (forward-only append)",
+  "ledger seal awaits Leon GO"
+ ]
+}

@@ -1,0 +1,18 @@
+{
+  "checker_version": "thesis-gate/0.1.0",
+  "cited_count": 5,
+  "findings_count": 15,
+  "findings_sha256": "724300e8826977592f0c7b7b203cbc6d0a715f0f34f66d27fbf24e6a386b3957",
+  "index_date": "2026-11-08",
+  "index_name": "DEMO-INDEX",
+  "input_bytes": 2653,
+  "input_sha256": "4d0c6eac1eb1b6dd57e9ee7e04379f20c5359973f8faa168f420fdac1f89df4f",
+  "lanes": {
+    "advisory_model": "not present in v0.1; when added it may explain findings and may never create one",
+    "deterministic": "all findings and both hashes above"
+  },
+  "receipt_sha256": "8f52090a001813ab3cb1dba0e0b2b863b798f175d71a04b75d61f57283fa859e",
+  "reference_count": 7,
+  "signature": null,
+  "signature_note": "Unsigned v0.1 prototype. ML-DSA-87 seat signature is added at the box stage."
+}

@@ -1,0 +1,41 @@
+{
+ "ceremony": "SBR-1 Speed Burst Record",
+ "date_utc": "2026-10-19",
+ "design": {
+  "stellar_transport": "1 transaction, 4 ManageData operations (names SBR-1-DOI-1..4), fee 100 stroops total, 200-stroop ledger max fee",
+  "xrp_rail": "4 pre-signed AccountSet transactions (sequences 107745093-107745096, fee 10 drops each), submitted in one burst, memo hex(SQDR+0x06+digest)"
+ },
+ "gates": [
+  "G1 payloads frozen in this prereg before broadcast",
+  "G2 scope stamp before first submission",
+  "G3 keyless byte-exact read-back of all 8 anchors",
+  "G4 exact costs disclosed",
+  "G5 burst timing honestly measured"
+ ],
+ "measured_metrics": [
+  "per-tx validated latency (XRP)",
+  "ledger-inclusion latency (Stellar bundle)",
+  "total burst wall-clock",
+  "exact fees in drops/stroops"
+ ],
+ "payload_doctrine": "Envelope SQDR + 0x06 + SHA-256(ASCII DOI string), 37 bytes per anchor; hex-ASCII on XRP MemoData, raw bytes as Stellar ManageData values. Digest class 0x06 = DOI binding (deterministic, keyless-verifiable: hash the DOI string, compare).",
+ "payloads": [
+  {
+   "digest": "c5d700739060b45be51f6e935ff93b323d88d15941744409c204f99d1f917cc5",
+   "doi": "10.5281/zenodo.23466738"
+  },
+  {
+   "digest": "09b1748878cc51aab6af19338b4ead4fb6c9d9239b06e863856813307f649071",
+   "doi": "10.5281/zenodo.23467440"
+  },
+  {
+   "digest": "6d07bfe08e4ff00b584affe740e98b97e09df22a50c6f3054193873d980b2762",
+   "doi": "10.5281/zenodo.23482978"
+  },
+  {
+   "digest": "a028ba4175ed78732c2b1b93eeaf9274f9104ac94592e509f020f7c59d0c259d",
+   "doi": "10.5281/zenodo.23485222"
+  }
+ ],
+ "purpose": "Speed/cost test of the routing doctrine from ledger 0261: XRP as the rail of record (one anchor tx per DOI), Stellar as the transport (all four DOIs bundled in one transaction). Four distinct DOI bindings fired in one burst."
+}

@@ -1,0 +1,65 @@
+{
+  "series": "HEMI-N",
+  "night": "20261102",
+  "started_at": "2026-11-02T09:04:10Z",
+  "protocol": "hemi_n_prereg v1.0",
+  "state_regen": null,
+  "batch": {
+    "seed": "20261102",
+    "n": 60,
+    "sha256": "288dc7c8f0f7c674c4eab06a4256426051d3f18db26239ea024858a78b60138d"
+  },
+  "transfer_pre": {
+    "resolved": 28,
+    "detected": 32
+  },
+  "post": {
+    "resolved": 28,
+    "detected": 32
+  },
+  "training": {
+    "deltas": 392,
+    "sum_abs_delta": 0.0104655481
+  },
+  "old_corpus_preserved": 68,
+  "falsifiers": {
+    "HF-N1_governance": {
+      "roster_sha_pre": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+      "roster_sha_post": "cd45a44eb3810123e7f96cf07a1ab4475972ee34f80a5fb1f657f3f9177ebd06",
+      "negatives": [
+        "LATENCY_SPIKE",
+        "unregistered_synthetic_fault"
+      ],
+      "false_positives": 0,
+      "pass": true
+    },
+    "HF-N2_bounded": {
+      "max_weight": 0.9960695449,
+      "pass": true
+    },
+    "HF-N3_lineage": {
+      "deltas": 392,
+      "orphans": 0,
+      "pass": true
+    },
+    "HF-N4_determinism": {
+      "run1": "5e216875b5f4d827",
+      "run2": "5e216875b5f4d827",
+      "pass": true
+    },
+    "HF-N5_preservation": {
+      "old_corpus_resolved": 68,
+      "expected": 68,
+      "pass": true
+    },
+    "standing_HF3_collision": {
+      "unique": 32,
+      "pass": true
+    },
+    "standing_control": {
+      "pass": true
+    }
+  },
+  "all_pass": true,
+  "completed_at": "2026-11-02T09:04:10Z"
+}
